@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Jura:300,400,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jura', sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 50px 0 30px 0;
+}
+
+header p {
+  font-size: 20px;
+}
+
+.pads {
+  display: flex;
+  width: 100%;
+}
+
+.pads > div {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.pad1 {
+  background: #ea526f;
+}
+
+.pad2 {
+  background: #f9dc5c;
+}
+
+.pad3 {
+  background: #011936;
+}
+
+.pad4 {
+  background: #c73e1d;
+}
+
+.pad5 {
+  background: #45cb85;
+}
+
+.pad6 {
+  background: #550c18;
+}
+
+.visual div {
+  position: absolute;
+  bottom: 0%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
